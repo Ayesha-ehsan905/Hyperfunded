@@ -6,6 +6,14 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>my-project</title>
+  <script>
+    // Default is dark. If user previously picked light, apply it ASAP to avoid flash.
+    try {
+      const theme = localStorage.getItem("hf-theme");
+      if (theme === "light") document.documentElement.classList.remove("dark");
+      if (theme === "dark") document.documentElement.classList.add("dark");
+    } catch { }
+  </script>
 </head>
 
 <body>

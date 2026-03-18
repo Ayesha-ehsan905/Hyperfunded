@@ -1,52 +1,5 @@
 import { Button } from "../../../../components/ui/button";
 
-/* Step data for the "How it Works" section */
-const steps = [
-  {
-    number: "1",
-    numberGradient:
-      "linear-gradient(180deg,rgba(255,75,51,0.32) 0%,rgba(255,75,51,0.12) 100%)",
-    title: "Choose Your Challenge",
-    description:
-      "Select your account size from $10K to $200K. Pay a one-time challenge fee and get instant access to your evaluation account.",
-    iconContent: (
-      <img className="relative w-[90px] h-[90px]" alt="Icon" src="/icon.svg" />
-    ),
-    numberPosition: "top-right", // number shown top-right aligned
-    align: "end",
-  },
-  {
-    number: "2",
-    numberGradient:
-      "linear-gradient(180deg,rgba(0,184,179,0.32) 0%,rgba(0,184,179,0.12) 100%)",
-    title: "Pass the Evaluation",
-    description:
-      "Hit your profit target while staying within risk rules. Trade any crypto pair, any strategy. We measure skill, not luck.",
-    iconContent: (
-      <div className="flex w-[90px] h-[90px] items-center justify-center gap-2.5 px-3 py-[11px] bg-[#014b49] rounded-[999px] border border-solid border-[#17e6e0]">
-        <img className="w-14 h-14" alt="Triangle" src="/triangle.svg" />
-      </div>
-    ),
-    numberPosition: "bottom-right",
-    align: "center",
-  },
-  {
-    number: "3",
-    numberGradient:
-      "linear-gradient(180deg,rgba(14,171,113,0.32) 0%,rgba(14,171,113,0.12) 100%)",
-    title: "Get Funded & Earn",
-    description:
-      "Trade with real capital and receive 80-90% of your profits. Withdraw anytime. Scale up to larger accounts.",
-    iconContent: (
-      <div className="flex w-[90px] h-[90px] items-center justify-center gap-2.5 px-3 py-[11px] bg-[#002b1b] rounded-[999px] border border-solid border-[#00d084]">
-        <img className="w-14 h-14" alt="Wallet" src="/wallet-2.svg" />
-      </div>
-    ),
-    numberPosition: "top-right",
-    align: "end",
-  },
-];
-
 export const TrustedPartnersSection = () => {
   return (
     <section className="flex flex-col items-center justify-center gap-12 px-60 py-[120px] self-stretch w-full bg-[#0d0f17]">
